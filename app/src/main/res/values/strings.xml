@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MovilApp3431</string>
+    <string name="title_activity_jet_pack">JetPackActivity</string>
+    <string name="title_activity_lista_jet_pack">ListaJetPackActivity</string>
+    <string name="title_activity_firebase_realtime_database">FirebaseRealtimeDatabaseActivity
+    </string>
+</resources>
