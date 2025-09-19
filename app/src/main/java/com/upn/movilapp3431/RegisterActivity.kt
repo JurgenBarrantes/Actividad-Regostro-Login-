@@ -37,7 +37,7 @@ class RegisterActivity : ComponentActivity() {
                 RegisterScreen(
                     onRegisterSuccess = {
                         Toast.makeText(this, "Registro exitoso. Por favor, inicia sesión.", Toast.LENGTH_LONG).show()
-                        finish() // Vuelve a LoginActivity
+                        finish()
                     },
                     auth = auth,
                     firestore = firestore
@@ -141,7 +141,6 @@ fun RegisterScreen(
                                     val userDocument = hashMapOf(
                                         "uid" to it.uid,
                                         "email" to it.email
-                                        // Puedes añadir más campos aquí, ej: "createdAt" -> FieldValue.serverTimestamp()
                                     )
                                     firestore.collection("users").document(it.uid)
                                         .set(userDocument)
@@ -169,7 +168,7 @@ fun RegisterScreen(
             }
             Spacer(modifier = Modifier.height(16.dp))
             TextButton(onClick = {
-                (context as? ComponentActivity)?.finish() // Vuelve a la actividad anterior (LoginActivity)
+                (context as? ComponentActivity)?.finish()
             }) {
                 Text("¿Ya tienes cuenta? Inicia Sesión")
             }
@@ -181,10 +180,8 @@ fun RegisterScreen(
 @Composable
 fun RegisterScreenPreview() {
     MovilApp3431Theme {
-        // Para la vista previa, no necesitamos instancias reales de Firebase
-        // Solo simulamos la UI.
-        val mockAuth = FirebaseAuth.getInstance() // Para que el compilador esté contento
-        val mockFirestore = FirebaseFirestore.getInstance() // Para que el compilador esté contento
+        val mockAuth = FirebaseAuth.getInstance()
+        val mockFirestore = FirebaseFirestore.getInstance()
         RegisterScreen(onRegisterSuccess = {}, auth = mockAuth, firestore = mockFirestore )
     }
 }
