@@ -22,9 +22,9 @@ class ContactListViewModel: ViewModel() {
     private val database = Firebase.database
     private val contactsRef = database.getReference("contacts")
 
-     init {
+    init {
         loadContacts()
-     }
+    }
 
     private fun loadContacts() {
         isLoading = true
@@ -54,3 +54,18 @@ class ContactListViewModel: ViewModel() {
 
 
 }
+
+
+
+/**
+1. abrir aplicación
+2. verificar si hay sesión iniciada en shared preferences
+2.1 si hay sesión, ir a la pantalla principal
+2.2 si no hay sesión, ir a la pantalla de login
+
+2. primera en cargar es el Login ir a la pantalla principal (Firebase
+3. Ingreso de usuario y contraseña
+4. Validar usuario y contraseña contra firebase/backend
+5. si es correcto, guardar en sesión (shared preferences el inicio de sesión)
+
+ */

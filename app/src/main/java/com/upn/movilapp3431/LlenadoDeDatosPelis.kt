@@ -1,12 +1,10 @@
 package com.upn.movilapp3431
 
-import com.upn.movilapp3431.entities.Contact
 import com.upn.movilapp3431.entities.Peliculas
 
 class LlenadoDeDatosPelis {
 
     fun getPeliculas(): List<Peliculas> {
-
 
 //                val contact = Contact("2", "Juana Perez", "123456789", "2024-06-10")
 //                val record = myRef.child("contacts").push()

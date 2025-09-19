@@ -4,4 +4,6 @@
     <string name="title_activity_lista_jet_pack">ListaJetPackActivity</string>
     <string name="title_activity_firebase_realtime_database">FirebaseRealtimeDatabaseActivity
     </string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">Registro</string> 
 </resources>

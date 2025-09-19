@@ -14,39 +14,48 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MovilApp3431">
         <activity
-            android:name=".FirebasePelisRealtimeDatabaseActivity"
+            android:name=".RegisterActivity"
             android:exported="true"
-            android:label="@string/title_activity_firebase_realtime_database"
-            android:theme="@style/Theme.MovilApp3431" >
+            android:label="@string/title_activity_register"
+            android:theme="@style/Theme.MovilApp3431">
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:label="@string/title_activity_login"
+            android:theme="@style/Theme.MovilApp3431">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-            android:name=".FirebaseRealtimeDatabaseActivity"
+            android:name=".FirebasePelisRealtimeDatabaseActivity"
             android:exported="false"
             android:label="@string/title_activity_firebase_realtime_database"
-            android:theme="@style/Theme.MovilApp3431" >
-        </activity>
+            android:theme="@style/Theme.MovilApp3431"></activity>
         <activity
-            android:name=".ListaJetPackActivity"
+            android:name=".FirebaseRealtimeDatabaseActivity"
             android:exported="true"
-            android:label="@string/title_activity_lista_jet_pack"
+            android:label="@string/title_activity_firebase_realtime_database"
             android:theme="@style/Theme.MovilApp3431">
 
         </activity>
         <activity
+            android:name=".ListaJetPackActivity"
+            android:exported="false"
+            android:label="@string/title_activity_lista_jet_pack"
+            android:theme="@style/Theme.MovilApp3431"></activity>
+        <activity
             android:name=".ListaActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".JetPackActivity"
             android:exported="true"
             android:label="@string/title_activity_jet_pack"
-            android:theme="@style/Theme.MovilApp3431">
-
-        </activity>
+            android:theme="@style/Theme.MovilApp3431"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="false" />
